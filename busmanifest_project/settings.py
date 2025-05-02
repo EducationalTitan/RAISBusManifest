@@ -77,11 +77,7 @@ WSGI_APPLICATION = 'busmanifest_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bus_manifest_db',
-        'USER': 'root',
-        'PASSWORD': 'Wenlock1994',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
