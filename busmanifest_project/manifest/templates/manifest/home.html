@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome | Bus Manifest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #1d72b8;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .btn.signup {
+            background-color: #2ecc71;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="{% static 'images/RAIS_logo.png' %}" alt="RAIS Logo" class="logo">
+
+    <a href="{% url 'login' %}" class="btn">🔐 Login to Your Account</a>
+    <a href="{% url 'signup' %}" class="btn signup">📝 Sign Up</a>
+
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+</body>
+</html>
