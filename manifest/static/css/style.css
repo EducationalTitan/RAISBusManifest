@@ -1,0 +1,92 @@
+/* ======= GENERAL ======= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    color: #333;
+    padding: 20px;
+}
+
+/* ======= HEADINGS ======= */
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
+h1 {
+    color: #0d6efd; /* Bootstrap Primary */
+}
+
+.text-success {
+    color: #198754;
+}
+
+/* ======= LOGO ======= */
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ======= FORM CARD ======= */
+.card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ======= FORM ELEMENTS ======= */
+form label {
+    font-weight: 600;
+    color: #0d6efd;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="time"],
+input[type="date"],
+textarea,
+select {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #0d6efd;
+    outline: none;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+
+/* ======= CHECKBOXES ======= */
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    accent-color: #198754; /* Green */
+}
+
+/* ======= BUTTON ======= */
+button.btn-success {
+    background: linear-gradient(to right, #28a745, #218838);
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 12px;
+    transition: background 0.3s ease-in-out;
+}
+
+button.btn-success:hover {
+    background: linear-gradient(to right, #218838, #1e7e34);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ======= RESPONSIVE ======= */
+@media screen and (max-width: 768px) {
+    .card {
+        padding: 20px;
+    }
+}
