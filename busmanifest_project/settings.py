@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(e2uq0em*dqlw$(cwj0wap708y-a!cwb0^(1-(!&3dqic5m!k*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['raisbusmanifest.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','raisbusmanifest.onrender.com']
 
 
 # Application definition
@@ -127,6 +127,8 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
